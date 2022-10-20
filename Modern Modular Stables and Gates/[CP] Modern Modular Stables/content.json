@@ -1,0 +1,118 @@
+{
+  "Format": "1.19",
+  "ConfigSchema":{
+    "Stable":{
+         "AllowValues":"Static, Seasonal",
+         "Default":"Static"
+      },
+       "Bedding":{
+         "AllowValues":"true, false",
+         "Default":"true"
+      },
+      "Troughs":{
+         "AllowValues":"true, false",
+         "Default":"true"
+      },
+       "Salt Lick":{
+         "AllowValues":"true, false",
+         "Default":"true"
+      },
+      "Crate of Apples":{
+         "AllowValues":"true, false",
+         "Default":"true"
+      }
+   },
+  "Changes": [
+    {
+        "Action": "EditImage",
+        "Target": "Buildings/Stable",
+        "FromFile": "assets/Stable.png",
+        "PatchMode": "Replace",
+         "When":{
+            "Stable":"Static",
+         },
+         "Update":"OnLocationChange, OnTimeChange"
+        },
+		{
+        "Action": "EditImage",
+        "Target": "Buildings/Stable",
+        "FromFile": "assets/Stable.png",
+        "PatchMode": "Replace",
+         "When":{
+            "Season":"Spring",
+            "Stable":"Seasonal",
+         },
+         "Update":"OnLocationChange, OnTimeChange"
+        },
+        {
+        "Action": "EditImage",
+        "Target": "Buildings/Stable",
+        "FromFile": "assets/Stable.png",
+        "PatchMode": "Replace",
+         "When":{
+            "Season":"Summer",
+            "Stable":"Seasonal",
+         },
+         "Update":"OnLocationChange, OnTimeChange"
+        },
+        {
+        "Action": "EditImage",
+        "Target": "Buildings/Stable",
+        "FromFile": "assets/Stable.png",
+        "PatchMode": "Replace",
+         "When":{
+            "Season":"Fall",
+            "Stable":"Seasonal",
+         },
+         "Update":"OnLocationChange, OnTimeChange"
+        },
+        {
+        "Action": "EditImage",
+        "Target": "Buildings/Stable",
+        "FromFile": "assets/Stable_Winter.png",
+        "PatchMode": "Replace",
+        "When":{
+            "Season":"Winter",
+            "Stable":"Seasonal",
+         },
+         "Update":"OnLocationChange, OnTimeChange"
+        },
+        {
+        "Action": "EditImage",
+        "Target": "Buildings/Stable",
+        "FromFile": "assets/Bedding.png",
+        "PatchMode": "Overlay",
+         "When":{
+            "Bedding":"true"
+         },
+        },
+        {
+        "Action": "EditImage",
+        "Target": "Buildings/Stable",
+        "FromFile": "assets/Troughs.png",
+        "PatchMode": "Overlay",
+        "When":{
+            "Troughs":"true"
+         },
+        },
+        {
+        "Action": "EditImage",
+        "Target": "Buildings/Stable",
+        "FromFile": "assets/Apple_Crate.png",
+        "PatchMode": "Overlay",
+        "When":{
+            "Crate of Apples":"true"
+         },
+        },
+         {
+        "Action": "EditImage",
+        "Target": "Buildings/Stable",
+        "FromFile": "assets/Salt_Lick.png",
+        "PatchMode": "Overlay",
+        "When":{
+            "Salt Lick":"true"
+         },
+        },
+		
+	]
+}

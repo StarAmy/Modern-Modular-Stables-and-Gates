@@ -1,0 +1,35 @@
+[
+		{
+		"$ItemType": "Furniture",
+		"ID": "Modern Modular Stable Gate",
+		"Type": "Decoration",
+		"Configurations": [
+			{
+				"Texture": "assets/stable_gate.png:0",
+				"DisplaySize": { "X": 4, "Y": 3 },
+				"CollisionHeight": 1
+			},
+			{
+				"Texture": "assets/open_gate.png:0",
+				"DisplaySize": { "X": 4, "Y": 3 },
+				"CollisionHeight": 1
+			},
+			{
+				"Texture": "assets/solid_gate.png:0",
+				"DisplaySize": { "X": 4, "Y": 3 },
+				"CollisionHeight": 1
+			},
+		]
+	},	
+	{
+		"$ItemType": "ShopEntry",
+		"ShopId": "Carpenter",
+		"MaxSold": 10,
+		"Cost": 400,
+		"Item":  
+		{
+			"Type": "DGAItem",
+			"Value": "staramy.stablegates/Modern Modular Stable Gate"
+		}
+	},
+]
