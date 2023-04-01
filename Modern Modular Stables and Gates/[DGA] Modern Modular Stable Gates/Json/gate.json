@@ -19,6 +19,16 @@
 				"DisplaySize": { "X": 4, "Y": 3 },
 				"CollisionHeight": 1
 			},
+			{
+				"Texture": "assets/sign_left.png:0",
+				"DisplaySize": { "X": 4, "Y": 3 },
+				"CollisionHeight": 1
+			},
+			{
+				"Texture": "assets/sign_right.png:0",
+				"DisplaySize": { "X": 4, "Y": 3 },
+				"CollisionHeight": 1
+			},
 		]
 	},	
 	{
